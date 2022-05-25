@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .search-box {
+    @apply w-full block pb-1 border-0 border-b border-b-gray-300 outline-none rounded-none placeholder:invisible
+  }
+
+  .search-box-label {
+    @apply absolute top-0 text-gray-400 search-box-label-active
+    origin-top-left pointer-events-none transition-all duration-200
+    peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100
+    peer-focus:search-box-label-active
+  }
+
+  .search-box-label-active {
+    @apply scale-75 -translate-y-4
+  }
+
+  .navbar-menu-item {
+    @apply flex justify-center items-center p-2 w-12 h-12 text-slate-50 bg-gray-800
+    rounded-full border-8 border-gray-300
+  }
+
+  .navbar-menu-item-active {
+    @apply border-gray-300
+  }
+}
+
 html,
 body {
   font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Arial, sans-serif;

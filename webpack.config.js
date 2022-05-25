@@ -18,7 +18,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        include: /src/,
+        include: [/src/, /react-icons\/(.)*(.js)$/],
         exclude: /node_modules/,
       },
       {
@@ -32,6 +32,10 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      react: "preact/compat",
+      "react-dom": "preact/compat",
+    },
     extensions: ['.js', '.jsx'],
   },
   plugins: [

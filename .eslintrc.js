@@ -5,14 +5,16 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
-    'plugin:react/recommended',
     'eslint-config-preact',
+    'plugin:tailwindcss/recommended',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  plugins: ['tailwindcss'],
   rules: {
+    'react/prop-types': 'off',
   },
   settings: {
     'import/resolver': {
