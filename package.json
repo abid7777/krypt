@@ -1,0 +1,64 @@
+{
+  "name": "krypt",
+  "version": "1.0.0",
+  "description": "A Simple Cryptocurrency Stats App",
+  "private": true,
+  "scripts": {
+    "build": "export NODE_ENV=\"production\" && webpack",
+    "dev": "webpack serve",
+    "js-lint": "eslint",
+    "css-lint": "stylelint './src/styles/*.css'",
+    "css-lint-fix": "stylelint './src/styles/*.css' --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abid7777/krypt.git"
+  },
+  "keywords": [
+    "crypto",
+    "currency",
+    "stats"
+  ],
+  "author": "abid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abid7777/krypt/issues"
+  },
+  "homepage": "https://github.com/abid7777/krypt#readme",
+  "eslintConfig": {
+    "extends": "preact"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/plugin-transform-react-jsx": "^7.17.12",
+    "@babel/preset-env": "^7.18.0",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "cssnano": "^5.1.9",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-preact": "^1.3.0",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-tailwindcss": "^3.5.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "postcss-preset-env": "^7.6.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.8.4",
+    "stylelint-config-standard": "^25.0.0",
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.72.1",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "preact": "^10.7.2"
+  }
+}
