@@ -19,8 +19,8 @@
   }
 
   .navbar-menu-item {
-    @apply flex justify-center items-center p-2 w-12 h-12 text-slate-50 bg-gray-800
-    rounded-full border-8 border-gray-300
+    @apply flex justify-center items-center w-12 h-12 text-gray-800
+    rounded-full border border-gray-800 hover:bg-gray-800 hover:text-slate-50 transition-colors
   }
 
   .navbar-menu-item-active {
